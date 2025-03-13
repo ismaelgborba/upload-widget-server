@@ -25,7 +25,6 @@ export async function uploadImage(
     return makeLeft(new InvalidFileFormat())
   }
 
-  // TODO: carregar a image p/ o Cloudflare R2
   const { key, url } = await uploadFileToStorage({
     fileName,
     folder: 'images',
